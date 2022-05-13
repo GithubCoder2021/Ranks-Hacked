@@ -4,7 +4,7 @@ num:0,
 totalNum:0,
 rank:1,
 rankTime:0,
-mults:[1000000,1000000,1000000],
+mults:[1,1,1],
 multBought:[0,0,0],
 money:0,
 gens:[0,0,0],
@@ -368,13 +368,14 @@ function importSave() {
 	var input=prompt('Copy and paste in your exported file and press enter.')
 	if (load(input)) {
 		if (input!=null) {
-			alert('Your save was invalid or caused a game-breaking bug. :(')
+			alert('Your save was invalid or caused a game-breaking bug. :( Sorry...')
 		}
 	}
 }
 
 function reset() {
-	if (confirm('Are you sure to reset your save? You can\'t undo your action!')) {
+	if (confirm('Are you sure to reset your save? You can\'t undo your action!'))
+	    alert('NOOOOOOOOOOOO')  {
 		player.notation=0
 		player.num=0
 		player.totalNum=0
