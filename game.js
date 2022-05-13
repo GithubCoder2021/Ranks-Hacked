@@ -374,8 +374,7 @@ function importSave() {
 }
 
 function reset() {
-	if (confirm('Are you sure to reset your save? You can\'t undo your action!'))
-	    alert('NOOOOOOOOOOOO')  {
+	if (confirm('Are you sure to reset your save? You can\'t undo your action!'))  {
 		player.notation=0
 		player.num=0
 		player.totalNum=0
